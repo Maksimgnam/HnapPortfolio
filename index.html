@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Document</title>
+
+    <style>
+        .slider {
+            position: relative;
+            width: 100%;
+            height: 500px;
+            overflow: hidden;
+        }
+
+        .slide {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 1s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+        }
+
+        .slide.active {
+            opacity: 1;
+        }
+
+        .blocker {
+            width: 600px;
+            height: 400px;
+            border: 1px solid lightblue;
+            border-radius: 10px;
+
+
+        }
+
+
+        .der {
+            width: 400px;
+            height: 50px;
+            border-radius: 10px;
+            background-color: black;
+            border-radius: 10px;
+            color: lightblue;
+            border: 1px solid lightblue;
+            position: relative;
+
+
+
+
+        }
+    </style>
+
+</head>
+
+
+<body>
+    <div class="wrap">
+        <div class="container" id="Cont">
+
+            <header class="header" id="Header">
+                <div class="logo" id="logo">MaksPorfolio</div>
+                <nav class="navbar" id="nav">
+                    <a href="#Home" id="a">Home </a>
+                    <a href="#About" id="a1">About me </a>
+                    <a href="#Directions" id="a2">My direction</a>
+                    <a href="#slider" id="a3">Works</a>
+                    <a href="#Contact" id="a4">Contact</a>
+                </nav>
+            </header>
+
+            <div class="cont" id="Home">
+                <div class="cont__text" data-aos="fade-right" data-aos-duration="2000" id="textBlock">
+                    <div class="h1" id="text1">Hi everyone</div>
+                    <div class="h2" id="text2">I'm Maks Hnap</div>
+                    <div class="h3" id="text3"> Web developer</div>
+                    <p id="text4">hi everyone. Im Maks Hnap.I live in Shklo, Ukaraine. Im front-end developer. Right now
+                        Im study
+                        in Creator It Academy. i started coding about 2 years ago. Now, Im working for some projects and
+                        studing new things in web technologies.I'll be happy to do your sites.
+
+                        .</p>
+                    <a href="Resume.pdf" download="Cv">
+                        <button class="contBtn" id="btn"> Download Cv</button>
+
+                    </a>
+
+
+                    <div class="line" id="line"></div>
+
+
+
+
+                </div>
+
+
+
+            </div>
+
+
+        </div>
+        <div class="cont two" id="About">
+            <div class="about__main" id="AboutText">About me</div>
+
+            <div class="about__cont" id="AboutCont">
+
+                <div class="about__textCont" data-aos="fade-right" data-aos-duration="2000" id="AboutTextCont">
+                    <h3 id="AboutText1">About</h3>
+                    <p class="one" id="AboutOne"> hi everyone. Im Maks Hnap.I live in Shklo, Ukaraine. Im front-end
+                        developer. Right
+                        now Im study
+                        in Creator It Academy. i started coding about 2 years ago. Now, Im working for some projects and
+                        studing new things in web technologies.I'll be happy to do your sites.
+                        .</p>
+                    <p class="sec" id="AboutTwo"> Im ready to start work with you.
+                        I had done some project that you can see in my github.
+                        Then I can be flexible. And Im going to work with if you have interesting projects
+                        I hope that we will be friends.
+
+                        .</p>
+
+                    <div class="block__li" data-aos="fade-right" data-aos-duration="2000" id="liBlock">
+                        <p class="li__p">Skils</p>
+                        <ul id="ul">
+                            <li id="li">Js</li>
+                            <li id="li1">Css</li>
+                            <li id="li2">Html</li>
+                            <li id="li3">Pug</li>
+                        </ul>
+                        <ul class="ul2">
+                            <li id="li4">MongoDb</li>
+                            <li id="li5">Git</li>
+                            <li id="li6">Scss</li>
+                            <li id="li7">Node.js</li>
+                        </ul>
+                        <ul class="ul3">
+                            <li id="li8"> React</li>
+                            <li id="li9">AOS</li>
+                            <li id="li10">Bootstrap</li>
+                            <li id="li11">Figma</li>
+                        </ul>
+                    </div>
+                    <div class="line" id="line1"></div>
+
+                </div>
+                <div class="name" data-aos="fade-right" data-aos-duration="2000" id="myName">
+                    Maks Hnap
+
+                </div>
+
+                <img src="maks.jpg" alt="" data-aos="fade-right" data-aos-duration="2000" class="img">
+
+
+
+            </div>
+
+
+        </div>
+        <div class="cont three" id="directions">
+            <div class="about__main" id="directionsText">My direction</div>
+
+            <div class="design" data-aos="fade-up" data-aos-duration="2000" id="directionsDesighn">
+                <h3 id="directionsH3">Design</h3>
+                <p id="directionsP">Im really interested in desighn. I had done about some project that i did in figma I
+                    worked with
+                    Figma, Adobe Photoshop, Adobe Xd.And Im also created logo and processed in Photoshop. </p>
+
+                <button class="btn" id="directionsBtn">More</button>
+
+            </div>
+
+
+            <div class="code" data-aos="fade-up" data-aos-duration="2000" id="directionsCode">
+                <h3 id="directionsH32">Front-end</h3>
+                <p id="directionsP2">How you Know that Im web dev. I had done some projects. Also I did many projects
+                    for figma's makets.
+                    I worked with new things as tailwind , material Ui yarn, vue js, gulp , webpack, svelte js and
+                    electron.
+                </p>
+                <button class="btn" id="directionsBtn2">More</button>
+            </div>
+        </div>
+        <div class="cont four" id="four">
+            <div class="four__blocks" id="fourBlock">
+                <div class="four__counter" id="four__counter">
+                    <p class="counter" id="p">0</p>
+
+                </div>
+                <div class="four__nameContainer" id="fourNameConat">
+                    <p class="four__name" id="fourName">Projects</p>
+
+                </div>
+            </div>
+            <div class="four__blocks" id="fourBlock2">
+                <div class="four__counter">
+                    <p class="counter" id="countDes">0</p>
+
+                </div>
+                <div class="four__nameContainer">
+                    <p class="four__name">Designs</p>
+
+                </div>
+            </div>
+            <div class="four__blocks" id="fourBlock3">
+                <div class="four__counter">
+                    <p class="counter" id="countTeam">0</p>
+
+                </div>
+                <div class="four__nameContainer">
+                    <p class="four__name">Team Projects</p>
+
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <div class="work" id="work">
+
+
+
+
+
+            <div class="work__block" data-aos="fade-up" data-aos-duration="2000" id="workBlock">
+
+                <div class="work__cont" id="workCont">
+                    <h3>Rick and Morty</h3>
+                </div>
+
+                <div class="button__cont">
+                    <a href="https://github.com/Maksimgnam/Rick-and-Morty-react.git">
+                        <div class="button" id="workBtn">
+                            Github
+
+
+                        </div>
+                    </a>
+                    <a href="rick-and-morty-react-rose.vercel.app">
+                        <div class="button" id="workBtnView">
+                            View
+
+
+                        </div>
+                    </a>
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+        <div class="work" id="work2">
+
+
+
+
+
+            <div class="work__block" data-aos="fade-left" data-aos-duration="2000" id="work2Block">
+
+                <div class="work__cont" id="work2Cont">
+                    <h3>ClockStopper</h3>
+                </div>
+
+                <div class="button__cont">
+                    <a href="https://github.com/Maksimgnam/ClockStoper.git">
+                        <div class="button" id="work2Btn">
+                            Github
+
+
+                        </div>
+                    </a>
+                    <a href="deluxe-sunburst-59adb5.netlify.app">
+                        <div class="button" id="work2BtnView">
+                            View
+
+
+                        </div>
+                    </a>
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+        <div class="work" id="work3">
+
+
+
+
+
+            <div class="work__block" data-aos="fade-right" data-aos-duration="2000" id="work3Block">
+
+                <div class="work__cont" id="work3Cont">
+                    <h3>Timer</h3>
+                </div>
+
+                <div class="button__cont">
+                    <a href="https://github.com/Maksimgnam/Timer.git">
+                        <div class="button" id="work3Btn">
+                            Github
+
+
+                        </div>
+                    </a>
+                    <a href="inquisitive-fairy-07394f.netlify.app">
+                        <div class="button" id="work3BtnView">
+                            View
+
+
+                        </div>
+                    </a>
+                </div>
+
+
+            </div>
+
+
+
+
+        </div>
+        <div class="work" id="work4">
+
+
+
+
+
+            <div class="work__block" data-aos="fade-right" data-aos-duration="2000" id="work4Block">
+
+                <div class="work__cont" id="work4Cont">
+                    <h3>Greenshelter</h3>
+                </div>
+
+                <div class="button__cont">
+                    <a href="https://github.com/OlegBandrivskiy26/GreenShelter.git">
+                        <div class="button" id="work4Btn">
+                            Github
+
+
+                        </div>
+                    </a>
+                    <a href="https://greenshelter.onrender.com/">
+                        <div class="button" id="work4BtnView">
+                            View
+
+
+                        </div>
+                    </a>
+                </div>
+
+
+            </div>
+
+
+
+
+        </div>
+        <div class="work" id="work5">
+
+
+
+
+
+            <div class="work__block" data-aos="fade-right" data-aos-duration="2000" id="work5Block">
+
+                <div class="work__cont" id="work5Cont">
+                    <h3>Drile</h3>
+                </div>
+
+                <div class="button__cont">
+                    <a href="https://github.com/Maksimgnam/Drile.git">
+                        <div class="button" id="work5Btn">
+                            Github
+
+
+                        </div>
+                    </a>
+                    <a href="drile-phi.vercel.app">
+                        <div class="button" id="work5BtnView">
+                            View
+
+
+                        </div>
+                    </a>
+                </div>
+
+
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+        <div class="contact" id="Contact">
+            <div class="about__main foot">Contact</div>
+
+
+            <div class="contact__icons" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+
+                <div class="icons">
+                    <a href="https://github.com/Maksimgnam">
+                        <img src="img/github.png" alt="" class="im">
+                    </a>
+                </div>
+
+                <div class="icons">
+                    <a href="https://t.me/maksym_hnap">
+                        <img src="img/telegram.png" alt="" class="im">
+                    </a>
+                </div>
+
+                <div class="icons">
+
+                    <a href="https://msng.link/o/?380985205409=vi">
+                        <img src="img/viber.png" alt="" class="im">
+                    </a>
+                </div>
+
+                <div class="icons">
+                    <a href="https://mail.google.com/mail/u/1/#inbox?compose=new">
+                        <img src="img/gmail.png" alt="" class="im">
+                    </a>
+                </div>
+
+                <div class="icons">
+                    <a href="https://msng.link/o/?maksboy70=ig">
+                        <img src="img/insta.png" alt="" class="im">
+                    </a>
+                </div>
+            </div>
+
+
+
+
+            <!-- <div class="media__row">
+                <a href="https://github.com/Maksimgnam">
+                    <img src="img/github.png" alt="" class="im">
+                </a>
+            </div>
+            <div class="media__row">
+                <a href="https://t.me/maksym_hnap">
+                    <img src="img/telegram.png" alt="" class="im">
+                </a>
+            </div>
+            <div class="media__row">
+                <a href="https://msng.link/o/?380985205409=vi">
+                    <img src="img/viber.png" alt="" class="im">
+                </a>
+            </div>
+            <div class="media__row">
+                <a href="https://mail.google.com/mail/u/1/#inbox?compose=new">
+                    <img src="img/gmail.png" alt="" class="im">
+                </a>
+            </div>
+            <div class="media__row">
+                <a href="https://msng.link/o/?maksboy70=ig">
+                    <img src="img/insta.png" alt="" class="im">
+                </a>
+            </div> -->
+
+        </div>
+        <footer class="footer" id="footer">
+            <h1 class="footer__text" id="footerText"> Maksym Hnap</h1>
+            <div class="footer__container" id="footerCont">
+
+
+                <div class="footer__nav" id="footerNav">
+                    <a href="#Home" id="footerA">Home </a>
+                    <a href="#About" id="footerA1">About me </a>
+                    <a href="#Directions" id="footerA2">My direction</a>
+                    <a href="#slider" id="footerA3">Works</a>
+                    <a href="#Contact" id="footerA4">Contact</a>
+                </div>
+
+            </div>
+
+
+            <div class="copyright" id="copy">Copyright by Maksym Gnap 2023</div>
+
+
+
+        </footer>
+
+        <script>
+
+
+
+            AOS.init();
+
+            let countP = 0;
+            const counterP = document.querySelector('#p');
+            setInterval(() => {
+                countP++;
+                counterP.innerText = countP;
+                if (countP >= 15) {
+                    countP = 0;
+                }
+            }, 1000);
+
+
+            let countDes = 0;
+            const counterDes = document.querySelector('#countDes');
+            setInterval(() => {
+                countDes++;
+                counterDes.innerText = countDes;
+                if (countDes >= 2) {
+                    countDes = 0;
+                }
+            }, 1000);
+
+
+            let countTeam = 0;
+            const counterTeam = document.querySelector('#countTeam');
+            setInterval(() => {
+                if (countTeam === 0) {
+                    countTeam++;
+                    counterTeam.innerText = countTeam;
+                } else if (countTeam === 1) {
+                    countTeam += 2;
+                    counterTeam.innerText = countTeam;
+                } else {
+                    countTeam = 0;
+                    counterTeam.innerText = countTeam;
+                }
+            }, 1000);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </script>
+
+        <script src="app.js"></script>
+</body>
+
+</html>
